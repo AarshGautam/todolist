@@ -1,0 +1,169 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: #f5f5f5;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .header {
+            background: white;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            border-bottom: 1px solid #e0e0e0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .home-btn {
+            background: #c9b9b9;
+            color: white;
+            border: none;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 12px;
+        }
+
+        .home-btn .home-icon{
+            width: 16px;
+            height: 16px;
+        }
+
+        .home-text {
+            color: #666;
+            font-size: 14px;
+        }
+
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .refer-link {
+            color: #ff6b35;
+            text-decoration: none;
+            font-size: 13px;
+        }
+
+        .header-icons {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .icon-btn {
+            background: none;
+            border: none;
+            width: 28px;
+            height: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            border-radius: 4px;
+            color: #666;
+        }
+
+        .icon-btn:hover {
+            background: #f0f0f0;
+        }
+        .icon-btn .icon-size{
+            width: 24px;
+            height: 24px;
+        }
+        
+        .unsorted-badge {
+            background: #f0f0f0;
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-size: 12px;
+            color: #666;
+        }
+
+        .main-container {
+            display: flex;
+            height: calc(100vh - 50px);
+        }
+
+        .sidebar {
+            width: 60px;
+            background: white;
+            border-right: 1px solid #e0e0e0;
+            display: flex;
+            flex-direction: column;
+            padding: 10px 0;
+            box-shadow: 1px 0 3px rgba(0,0,0,0.1);
+        }
+
+        .tool-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 12px 8px;
+            cursor: pointer;
+            border-radius: 6px;
+            margin: 2px 8px;
+            transition: background-color 0.2s;
+        }
+
+        .tool-item:hover {
+            background: #f5f5f5;
+        }
+
+        .tool-item.active {
+            background: #e3f2fd;
+            color: #1976d2;
+        }
+
+        .tool-icon {
+            width: 20px;
+            height: 20px;
+            margin-bottom: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .tool-label {
+            font-size: 10px;
+            text-align: center;
+            color: #666;
+            line-height: 1.2;
+        }
+
+        .tool-item.active .tool-label {
+            color: #1976d2;
+        }
+
+
+        /* SVG Icons */
+        .icon-note::before { content: '📝'; }
+        .icon-link::before { content: '🔗'; }
+        .icon-todo::before { content: '✓'; }
+        .icon-more::before { content: '⋯'; }
+        .icon-upload::before { content: '📁'; }
+
+        .tools-separator {
+            height: 1px;
+            background: #e0e0e0;
+            margin: 8px 12px;
+        }

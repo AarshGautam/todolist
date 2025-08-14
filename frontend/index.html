@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note App</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-left">
+            <button class="home-btn"><img src="image/streamline-cyber-color--batman.svg" class="home-icon" alt="logo"></button>
+            <span class="home-text">Home</span>
+        </div>
+        <div class="header-right">
+            <div class="header-icons">
+                <button class="icon-btn"><img src="image/bx--undo.svg" alt="undo"></button>
+                <button class="icon-btn"><img src="image/bx--undo copy 2.svg" class="icon-size" alt="redo"></button>
+                <button class="icon-btn"><img src="image/weui--help-outlined.svg" alt="help"></button>
+                <button class="icon-btn"><img src="image/si--search-line.svg" alt="search"></button>
+                <button class="icon-btn"><img src="image/ph--bell.svg" class="icon-size" alt="notification"></button>
+                <button class="icon-btn"><img src="image/lsicon--setting-outline.svg" class="icon-size" alt="setting"></button>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <div class="sidebar">
+            <div class="tool-item tool-note" data-tool="note">
+                <div class="tool-icon icon-note"></div>
+                <div class="tool-label">Note</div>
+            </div>
+
+            <div class="tool-item" data-tool="link">
+                <div class="tool-icon icon-link"></div>
+                <div class="tool-label">Link</div>
+            </div>
+
+            <div class="tool-item" data-tool="todo">
+                <div class="tool-icon icon-todo"></div>
+                <div class="tool-label">To-do</div>
+            </div>
+
+            <div class="tool-item" data-tool="more">
+                <div class="tool-icon icon-more"></div>
+            </div>
+
+            <div class="tools-separator"></div>
+
+            <div class="tool-item" data-tool="upload">
+                <div class="tool-icon icon-upload"></div>
+                <div class="tool-label">Upload</div>
+            </div>
+        </div>
+        <main>
+          <div class="canvas">
+          </div>
+        </main>
+        <!-- <div class="canvas-area">
+            <canvas class="canvas" id="mainCanvas"></canvas>
+        </div> -->
+    </div>
+
+    <script src="javascript/script.js"></script>
+      
+</body>
+</html>
